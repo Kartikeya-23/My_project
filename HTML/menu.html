@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+    1st web page
+    </title>
+    <meta name="description" content="for testing"/>
+    <meta name="author" content="Kartikeya Mishra"/>
+
+    <meta name="keywords" content="1st,test,new"/>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: sans-serif;
+            font-size: 20px;
+            box-sizing:border-box;
+        }
+        body{
+            background-image:url("1080p-Full-HD-Images.jpg");
+            background-size: cover;
+            box-sizing: border-box;
+        }
+        .mainmenu{
+            background-color: black;
+            text-align-last: center;
+        }
+        .mainmenu ul
+        {
+            list-style: none;
+            display: inline-flex;
+        }
+        .mainmenu ul li{
+            width: 150px;
+            padding: 15px;
+            margin: 15px;
+        }
+        .mainmenu ul li a{
+            text-decoration: none;
+            color: white;
+
+        }
+        .active,.mainmenu ul li{
+            background-color:firebrick;
+            border-radius: 5px;
+        }
+        .fa{
+            margin-right: 8px;
+        }
+        .submenu1{
+            display: none;
+        }
+        .mainmenu ul li:hover .submenu1{
+            display:block;
+            background-color:darkred;
+            position: absolute;
+            margin-top: 15;
+            margin-left: -25;
+        }
+
+        .mainmenu ul li:hover .submenu1 ul{
+           display: block;
+        }
+        .mainmenu ul li:hover .submenu1 ul li{
+            width:150;
+            padding: 15;
+            text-align: left;
+            background: transparent;
+            border-radius: 0px;
+            border-bottom: 1px dotted white ;
+
+        }
+        .submenu2{
+            display:none;
+        }
+        .hoverme:hover .submenu2{
+            display:block;
+            position: absolute;
+            background-color:darkred;
+            margin-top: -40px;
+            margin-left: 140px;
+        }
+
+    </style>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="mainmenu">
+           <ul>
+               <li class="active"><a href=""><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+            <li><a href=""><i class="fa fa-home" aria-hidden="true"></i>About</a>
+            <div class="submenu1"><ul>
+                <li><a href="">a</a></li>
+                           <li class="hoverme"><a href="">b</a>
+                           <div class="submenu2">
+                                  <ul>
+                                  <li><a href="">a1</a></li>
+                                  <li><a href="">a2</a></li>
+                                  <li><a href="">a3</a></li>
+                                  <li><a href="">a4</a></li>
+                               </ul></div></li>
+
+                <li><a href="">c</a></li>
+                <li><a href="">d</a></li>
+                <li><a href="">e</a></li>
+                </ul> </div>
+            </li>
+            <li><a href=""><i class="fa fa-home" aria-hidden="true"></i>Service</a></li>
+            <li><a href=""><i class="fa fa-home" aria-hidden="true"></i>Client</a></li>
+            <li><a href=""><i class="fa fa-home" aria-hidden="true"></i>investor</a></li>
+            <li><a href=""><i class="fa fa-home" aria-hidden="true"></i>Training</a></li>
+            <li><a href=""><i class="fa fa-home" aria-hidden="true"></i>Contact></a></li>
+            <li><a href=""><i class="fa fa-home" aria-hidden="true"></i>pricing</a></li>
+            </ul>
+        Menu</div>
+
+
+
+
+    </body>
+</html>
+
